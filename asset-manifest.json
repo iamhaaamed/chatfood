@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/iamhaaamed/restaurant/static/css/main.ed4c820a.chunk.css",
+    "main.js": "/iamhaaamed/restaurant/static/js/main.74df08b6.chunk.js",
+    "main.js.map": "/iamhaaamed/restaurant/static/js/main.74df08b6.chunk.js.map",
+    "runtime-main.js": "/iamhaaamed/restaurant/static/js/runtime-main.0b512b82.js",
+    "runtime-main.js.map": "/iamhaaamed/restaurant/static/js/runtime-main.0b512b82.js.map",
+    "static/css/2.b44e1a68.chunk.css": "/iamhaaamed/restaurant/static/css/2.b44e1a68.chunk.css",
+    "static/js/2.b2322a79.chunk.js": "/iamhaaamed/restaurant/static/js/2.b2322a79.chunk.js",
+    "static/js/2.b2322a79.chunk.js.map": "/iamhaaamed/restaurant/static/js/2.b2322a79.chunk.js.map",
+    "static/js/3.7c2e338e.chunk.js": "/iamhaaamed/restaurant/static/js/3.7c2e338e.chunk.js",
+    "static/js/3.7c2e338e.chunk.js.map": "/iamhaaamed/restaurant/static/js/3.7c2e338e.chunk.js.map",
+    "index.html": "/iamhaaamed/restaurant/index.html",
+    "static/css/2.b44e1a68.chunk.css.map": "/iamhaaamed/restaurant/static/css/2.b44e1a68.chunk.css.map",
+    "static/css/main.ed4c820a.chunk.css.map": "/iamhaaamed/restaurant/static/css/main.ed4c820a.chunk.css.map",
+    "static/js/2.b2322a79.chunk.js.LICENSE.txt": "/iamhaaamed/restaurant/static/js/2.b2322a79.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/iamhaaamed/restaurant/static/media/Samim.e97c598e.eot",
+    "static/media/font-awesome.min.css": "/iamhaaamed/restaurant/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/header.97e6af63.png": "/iamhaaamed/restaurant/static/media/header.97e6af63.png",
+    "static/media/healthy.9de99267.png": "/iamhaaamed/restaurant/static/media/healthy.9de99267.png",
+    "static/media/pizza.3c242ca3.png": "/iamhaaamed/restaurant/static/media/pizza.3c242ca3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b512b82.js",
+    "static/css/2.b44e1a68.chunk.css",
+    "static/js/2.b2322a79.chunk.js",
+    "static/css/main.ed4c820a.chunk.css",
+    "static/js/main.74df08b6.chunk.js"
+  ]
+}
