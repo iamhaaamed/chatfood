@@ -5,7 +5,7 @@ export default () => {
   return (
     <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <a className="navbar-brand" href="#">
-        <img src={logo} />
+        <img src={logo} className="img-fluid" />
       </a>
 
       <nav class="my-2 my-md-0 me-md-3">
