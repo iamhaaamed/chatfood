@@ -31,3 +31,16 @@
 body {
   font-family: "Samim";
 }
+
+.text-danger {
+  color: #f61849 !important;
+}
+
+.bg-danger {
+  background-color: #f61849 !important;
+}
+
+.btn-danger {
+  background-color: #f61849 !important;
+  border-color: #f61849 !important;
+}
