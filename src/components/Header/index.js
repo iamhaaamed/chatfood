@@ -9,16 +9,16 @@ export default () => {
       </a>
 
       <nav class="my-2 my-md-0 me-md-3">
-        <a class="p-2 text-dark" href="#">
+        <a class="p-2 text-dark text-decoration-none" href="#">
           <i className="fa fa-home text-danger mx-1" /> صفحه اصلی
         </a>
-        <a class="p-2 text-dark" href="#">
+        <a class="p-2 text-dark text-decoration-none" href="#">
           <i className="fa fa-list text-danger mx-1" /> دسته بندی ها
         </a>
-        <a class="p-2 text-dark" href="#">
+        <a class="p-2 text-dark text-decoration-none" href="#">
           تماس با ما
         </a>
-        <a class="p-2 text-dark" href="#">
+        <a class="p-2 text-dark text-decoration-none" href="#">
           درباره ما
         </a>
       </nav>
