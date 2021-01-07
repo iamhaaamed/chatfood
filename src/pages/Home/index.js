@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import header from "../../assets/images/header.png";
 import pizza from "../../assets/images/pizza.png";
 import healthy from "../../assets/images/healthy.png";
+import FoodCard from "../../components/FoodCard";
 
 const data = [
   {
@@ -157,49 +158,8 @@ const Home = () => {
           ))}
           <div className="container mt-3">
             <div className="row">
-              {filteredData.map(({ title, bgImage, logoImage, type, rate }) => (
-                <div
-                  class="card rounded shadow"
-                  style={{ width: "18rem", margin: 20, padding: 0, border: 0 }}
-                >
-                  <img
-                    class="card-img-top rounded"
-                    src={bgImage}
-                    style={{ height: 100 }}
-                  />
-
-                  <div class="card-body" style={{ marginTop: -50 }}>
-                    <img
-                      class="card-img-top rounded-circle shadow "
-                      src={logoImage}
-                      style={{ width: 150, height: 150 }}
-                    />
-                    <h5 class="card-title  my-2">{title}</h5>
-                    <h6 class="card-title my-2">{type}</h6>
-
-                    <div>
-                      <div className="my-2">
-                        <span class="badge bg-danger mx-2">{rate}</span>
-                        <StarRatings
-                          starRatedColor="yellow"
-                          starDimension="20px"
-                          starSpacing="5px"
-                          rating={2}
-                          changeRating={() => console.log(null)}
-                          numberOfStars={5}
-                          name="rating"
-                        />
-                      </div>
-                    </div>
-
-                    <button
-                      onClick={() => null}
-                      className={`btn btn-pill border-danger rounded-pill mt-3`}
-                    >
-                      مشاهده
-                    </button>
-                  </div>
-                </div>
+              {filteredData.map((f) => (
+                <FoodCard key={f.title} {...f} />
               ))}
             </div>
           </div>

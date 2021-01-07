@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.svg";
 
 export default () => {
   return (
@@ -41,7 +41,7 @@ export default () => {
         </div>
       </div>
       <div className="col-1 me-2">
-        <select class="form-select" aria-label="Default select example">
+        <select className="form-select" aria-label="Default select example">
           <option value="1">وکیل اباد</option>
           <option value="2">ستارخان</option>
           <option value="3">طرقبه</option>
