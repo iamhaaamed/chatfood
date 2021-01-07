@@ -3,56 +3,38 @@ import logo from "../../assets/images/logo.svg";
 
 export default () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-white bg-white shadow px-2">
+    <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <a className="navbar-brand" href="#">
         <img src={logo} />
       </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div className="navbar-nav">
-          <a
-            className="nav-link active  text-dark"
-            aria-current="page"
-            href="#"
-          >
-            <i className="fa fa-home text-danger mx-1" />
-            صفحه اصلی
-          </a>
-          <a className="nav-link text-dark" href="#">
-            <i className="fa fa-list text-danger mx-1" />
-            دسته بندی ها
-          </a>
-          <a className="nav-link  text-dark" href="#">
-            تماس با ما
-          </a>
-          <a className="nav-link  text-dark" href="#">
-            درباره ما
-          </a>
+
+      <nav class="my-2 my-md-0 me-md-3">
+        <a class="p-2 text-dark" href="#">
+          <i className="fa fa-home text-danger mx-1" /> صفحه اصلی
+        </a>
+        <a class="p-2 text-dark" href="#">
+          <i className="fa fa-list text-danger mx-1" /> دسته بندی ها
+        </a>
+        <a class="p-2 text-dark" href="#">
+          تماس با ما
+        </a>
+        <a class="p-2 text-dark" href="#">
+          درباره ما
+        </a>
+      </nav>
+      <div class="my-0 ms-md-auto d-flex align-items-center justify-center">
+        <div className="col-5">
+          <select className="form-select" aria-label="Default select example">
+            <option value="1">وکیل اباد</option>
+            <option value="2">ستارخان</option>
+            <option value="3">طرقبه</option>
+          </select>
         </div>
-      </div>
-      <div className="col-1 me-2">
-        <select className="form-select" aria-label="Default select example">
-          <option value="1">وکیل اباد</option>
-          <option value="2">ستارخان</option>
-          <option value="3">طرقبه</option>
-        </select>
-      </div>
-      <div className="col-1">
-        <button className="btn btn-pill btn-danger rounded-pill">
+        <button className="btn btn-pill btn-danger rounded-pill ms-1 col-7">
           ثبت رستوران
           <i className="fa fa-plus-circle text-white mx-1" />
         </button>
       </div>
-    </nav>
+    </header>
   );
 };
