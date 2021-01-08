@@ -12,12 +12,16 @@ export default function FoodCard({
 }) {
   return (
     <div className="col-lg-3 col-6">
-      <div className="card mb-4 shadow  border-0">
+      <div className="card mb-4 shadow  border-0 " style={{ borderRadius: 20 }}>
         <div className="card-header  border-0 p-0">
           <img
-            className="card-img-top rounded img-fluid"
+            className="card-img-top  img-fluid"
             src={bgImage}
-            style={{ height: 100 }}
+            style={{
+              height: 100,
+              borderTopRightRadius: 20,
+              borderTopLeftRadius: 20,
+            }}
           />
         </div>
         <div className="card-body">
@@ -35,7 +39,7 @@ export default function FoodCard({
               <StarRatings
                 starRatedColor="yellow"
                 starDimension="20px"
-                starSpacing="5px"
+                starSpacing="3px"
                 rating={2}
                 numberOfStars={5}
                 name="rating"
