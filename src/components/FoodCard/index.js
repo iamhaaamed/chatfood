@@ -29,7 +29,6 @@ export default function FoodCard({ bgImage, logoImage, title, type, rate }) {
                 starDimension="20px"
                 starSpacing="5px"
                 rating={2}
-                changeRating={() => console.log(null)}
                 numberOfStars={5}
                 name="rating"
               />

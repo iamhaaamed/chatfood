@@ -98,10 +98,10 @@ const Home = () => {
       <div>
         <div className="col-md-3 mx-auto my-5">
           <div className="text-center">
-            <div className="input-group">
+            <div className="input-group shadow rounded-pill">
               <input
                 type="text"
-                className="form-control "
+                className="form-control border-0 rounded-pill"
                 placeholder="جستجوي نام غذا، رستوران "
                 value={term}
                 onChange={(e) => {
@@ -109,7 +109,7 @@ const Home = () => {
                 }}
               />
               <div className="input-group-append rounded-pill ">
-                <button className="btn btn-white border" type="button">
+                <button className="btn btn-white " type="button">
                   <i className="fa fa-search text-danger" />
                 </button>
               </div>
