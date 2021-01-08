@@ -11,7 +11,7 @@ const data = [
     title: "صدف",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "فست فود",
+    category: "فست فود",
     rate: " 2.0",
   },
   {
@@ -19,7 +19,7 @@ const data = [
     title: "شاهان",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "ایرانی",
+    category: "غذای ایرانی",
     rate: "3.0",
   },
   {
@@ -27,7 +27,7 @@ const data = [
     title: "کریم",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "رستوران",
+    category: "رستوران",
     rate: "4.0",
   },
   {
@@ -35,7 +35,7 @@ const data = [
     title: "نارنج",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "ملل",
+    category: "سالاد",
     rate: " 3.0",
   },
   {
@@ -43,7 +43,7 @@ const data = [
     title: " طرقبه",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "فست فود",
+    category: "فست فود",
     rate: "5.0",
   },
   {
@@ -51,7 +51,7 @@ const data = [
     title: "استاربرگر",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "ایرانی",
+    category: "غذای ایرانی",
     rate: "4.0",
   },
   {
@@ -59,7 +59,7 @@ const data = [
     title: "دایی",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "ایرانی",
+    category: "غذای ایرانی",
     rate: "1.0",
   },
   {
@@ -67,7 +67,7 @@ const data = [
     title: "البرز",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: "دریایی",
+    category: "سالاد",
     rate: "2.0",
   },
 ];
@@ -83,7 +83,9 @@ const Home = () => {
   useEffect(() => {
     setFilteredData(
       data.filter((str) => {
-        return str.title.indexOf(term) !== -1 || str.type.indexOf(term) !== -1;
+        return (
+          str.title.indexOf(term) !== -1 || str.category.indexOf(term) !== -1
+        );
       })
     );
   }, [term]);
@@ -92,7 +94,7 @@ const Home = () => {
     if (selectedFilter !== "همه") {
       setFilteredData(
         data.filter((str) => {
-          return str.type === selectedFilter;
+          return str.category === selectedFilter;
         })
       );
     } else {
@@ -154,7 +156,7 @@ const Home = () => {
               <hr className="text-danger"></hr>
             </div>
           </div>
-          {["همه", "رستوران", "ایرانی", "فست فود", "ملل"].map((item) => (
+          {["همه", "فست فود", "غذای ایرانی", "سالاد"].map((item) => (
             <button
               onClick={() => setSelectedFilter(item)}
               className={`btn btn-pill btn-${

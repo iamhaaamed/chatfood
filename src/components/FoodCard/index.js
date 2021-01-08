@@ -6,7 +6,7 @@ export default function FoodCard({
   bgImage,
   logoImage,
   title,
-  type,
+  category,
   rate,
   onClick,
 }) {
@@ -24,10 +24,10 @@ export default function FoodCard({
           <img
             className="card-img-top rounded-circle shadow img-fluid"
             src={logoImage}
-            style={{ width: 150, height: 150, marginTop: -60 }}
+            style={{ width: 130, height: 130, marginTop: -80 }}
           />
           <h5 className="card-title  my-2">{title}</h5>
-          <h6 className="card-title my-2">{type}</h6>
+          <h6 className="card-title my-2">{category}</h6>
 
           <div>
             <div className="mt-4 mb-2">
@@ -76,7 +76,7 @@ export default function FoodCard({
               ></button>
             </div>
             <div className="modal-body">
-              {type}
+              {category}
               <img
                 className="card-img-top rounded img-fluid"
                 src={logoImage}
