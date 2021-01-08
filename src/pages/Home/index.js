@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 import Header from "../../components/Header";
-import header from "../../assets/images/header.png";
 import pizza from "../../assets/images/pizza.png";
 import healthy from "../../assets/images/healthy.png";
 import FoodCard from "../../components/FoodCard";
 
 const data = [
   {
+    id: 1,
     title: "صدف",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
@@ -15,20 +15,23 @@ const data = [
     rate: " 2.0",
   },
   {
-    title: " شاهان",
+    id: 2,
+    title: "شاهان",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
     type: "ایرانی",
     rate: "3.0",
   },
   {
-    title: " کریم",
+    id: 3,
+    title: "کریم",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
     type: "رستوران",
     rate: "4.0",
   },
   {
+    id: 4,
     title: "نارنج",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
@@ -36,6 +39,7 @@ const data = [
     rate: " 3.0",
   },
   {
+    id: 5,
     title: " طرقبه",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
@@ -43,13 +47,15 @@ const data = [
     rate: "5.0",
   },
   {
-    title: " استاربرگر",
+    id: 6,
+    title: "استاربرگر",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
     type: "ایرانی",
     rate: "4.0",
   },
   {
+    id: 7,
     title: "دایی",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
@@ -57,15 +63,18 @@ const data = [
     rate: "1.0",
   },
   {
+    id: 8,
     title: "البرز",
     bgImage: "https://picsum.photos/200",
     logoImage: "https://picsum.photos/100",
-    type: " دریایی",
+    type: "دریایی",
     rate: "2.0",
   },
 ];
 
 const Home = () => {
+  const [selectedFoodCard, setSelectedFoodCard] = useState();
+
   const [selectedFilter, setSelectedFilter] = useState("همه");
   const [term, setTerm] = useState("");
 
@@ -158,7 +167,11 @@ const Home = () => {
           <div className="container mt-5">
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
               {filteredData.map((f) => (
-                <FoodCard key={f.title} {...f} />
+                <FoodCard
+                  key={f.id}
+                  {...f}
+                  onClick={() => setSelectedFoodCard(f)}
+                />
               ))}
             </div>
           </div>

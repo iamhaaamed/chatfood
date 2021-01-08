@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import StarRatings from "react-star-ratings";
 
-export default function FoodCard({ bgImage, logoImage, title, type, rate }) {
+export default function FoodCard({
+  id,
+  bgImage,
+  logoImage,
+  title,
+  type,
+  rate,
+  onClick,
+}) {
   return (
     <div className="col-lg-3">
       <div className="card mb-4 shadow  border-0">
@@ -36,11 +44,58 @@ export default function FoodCard({ bgImage, logoImage, title, type, rate }) {
           </div>
 
           <button
-            onClick={() => null}
+            onClick={onClick}
             className={`btn btn-pill border-danger rounded-pill mt-3`}
+            data-bs-toggle="modal"
+            data-bs-target={`#exampleModal${id}`}
           >
             مشاهده
           </button>
+        </div>
+      </div>
+
+      <div
+        className="modal fade"
+        id={`exampleModal${id}`}
+        tabIndex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                منو
+                {title}
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              {type}
+              <img
+                className="card-img-top rounded img-fluid"
+                src={logoImage}
+                style={{ height: 100 }}
+              />
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                بستن
+              </button>
+              {/* <button type="button" className="btn btn-primary">
+                Save changes
+              </button> */}
+            </div>
+          </div>
         </div>
       </div>
     </div>
