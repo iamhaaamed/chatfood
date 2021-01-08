@@ -24,7 +24,10 @@ export default () => {
       </nav>
       <div class="my-0 ms-md-auto d-flex align-items-center justify-center">
         <div className="col-5">
-          <select className="form-select" aria-label="Default select example">
+          <select
+            className="form-select rounded-pill border-0 shadow"
+            aria-label="Default select example"
+          >
             <option value="1">وکیل اباد</option>
             <option value="2">ستارخان</option>
             <option value="3">طرقبه</option>

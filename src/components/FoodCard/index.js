@@ -22,7 +22,7 @@ export default function FoodCard({ bgImage, logoImage, title, type, rate }) {
           <h6 className="card-title my-2">{type}</h6>
 
           <div>
-            <div className="my-2">
+            <div className="mt-4 mb-2">
               <span className="badge bg-danger mx-2">{rate}</span>
               <StarRatings
                 starRatedColor="yellow"

@@ -156,7 +156,7 @@ const Home = () => {
               {item}
             </button>
           ))}
-          <div className="container mt-3">
+          <div className="container mt-5">
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
               {filteredData.map((f) => (
                 <FoodCard key={f.title} {...f} />
