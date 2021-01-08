@@ -11,7 +11,7 @@ export default function FoodCard({
   onClick,
 }) {
   return (
-    <div className="col-lg-3">
+    <div className="col-lg-3 col-6">
       <div className="card mb-4 shadow  border-0">
         <div className="card-header  border-0 p-0">
           <img
