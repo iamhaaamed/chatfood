@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import StarRatings from "react-star-ratings";
 
 import Header from "../../components/Header";
 import header from "../../assets/images/header.png";
@@ -146,7 +145,7 @@ const Home = () => {
               <hr className="text-danger"></hr>
             </div>
           </div>
-          {["همه", "رستوران", "ایرانی", "فست فود", " ملل"].map((item) => (
+          {["همه", "رستوران", "ایرانی", "فست فود", "ملل"].map((item) => (
             <button
               onClick={() => setSelectedFilter(item)}
               className={`btn btn-pill btn-${
