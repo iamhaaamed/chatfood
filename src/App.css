@@ -48,3 +48,7 @@ body {
 .border-danger {
   border-color: #f61849 !important;
 }
+
+.star-ratings {
+  transform: rotate(180deg);
+}
