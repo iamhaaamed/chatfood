@@ -44,3 +44,7 @@ body {
   background-color: #f61849 !important;
   border-color: #f61849 !important;
 }
+
+.border-danger {
+  border-color: #f61849 !important;
+}
