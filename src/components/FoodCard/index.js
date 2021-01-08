@@ -3,16 +3,16 @@ import StarRatings from "react-star-ratings";
 
 export default function FoodCard({ bgImage, logoImage, title, type, rate }) {
   return (
-    <div class="col-lg-3">
-      <div class="card mb-4 shadow  border-0">
-        <div class="card-header  border-0 p-0">
+    <div className="col-lg-3">
+      <div className="card mb-4 shadow  border-0">
+        <div className="card-header  border-0 p-0">
           <img
             className="card-img-top rounded img-fluid"
             src={bgImage}
             style={{ height: 100 }}
           />
         </div>
-        <div class="card-body">
+        <div className="card-body">
           <img
             className="card-img-top rounded-circle shadow img-fluid"
             src={logoImage}
