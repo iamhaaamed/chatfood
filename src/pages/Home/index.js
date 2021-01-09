@@ -110,13 +110,13 @@ const Home = () => {
     <div style={{ flex: 1 }}>
       <Header />
       <div>
-        <div className="col-md-3 mx-auto my-5">
+        <div className="col-md-3 mx-auto my-5 px-3">
           <div className="text-center">
             <div className="input-group shadow rounded-pill">
               <input
                 type="text"
                 className="form-control border-0 rounded-pill"
-                placeholder="جستجوي نام غذا، رستوران "
+                placeholder="جستجوي نام رستوران، غذا "
                 value={term}
                 onChange={(e) => {
                   setTerm(e.target.value);

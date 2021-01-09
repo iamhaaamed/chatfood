@@ -19,8 +19,8 @@ export default function FoodCard({
             src={bgImage}
             style={{
               height: 100,
-              borderTopRightRadius: 20,
-              borderTopLeftRadius: 20,
+              borderTopRightRadius: 24,
+              borderTopLeftRadius: 24,
             }}
           />
         </div>
@@ -28,7 +28,7 @@ export default function FoodCard({
           <img
             className="card-img-top rounded-circle shadow img-fluid"
             src={logoImage}
-            style={{ width: 130, height: 130, marginTop: -80 }}
+            style={{ width: 130, height: 130, marginTop: -90 }}
           />
           <h5 className="card-title  my-2">{title}</h5>
           <h6 className="card-title my-2">{category}</h6>
@@ -37,7 +37,7 @@ export default function FoodCard({
             <div className="mt-4 mb-2">
               <span className="badge bg-danger mx-2">{rate}</span>
               <StarRatings
-                starRatedColor="yellow"
+                starRatedColor="#F6C518"
                 starDimension="20px"
                 starSpacing="3px"
                 rating={2}
