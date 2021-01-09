@@ -5,6 +5,8 @@ import pizza from "../../assets/images/pizza.png";
 import healthy from "../../assets/images/healthy.png";
 import FoodCard from "../../components/FoodCard";
 
+import useGAEventTracke from "../../hooks/useGAEventTracker";
+
 const data = [
   {
     id: 1,
@@ -73,6 +75,8 @@ const data = [
 ];
 
 const Home = () => {
+  const GAEventsTracker = useGAEventTracke("Links");
+
   const [selectedFoodCard, setSelectedFoodCard] = useState();
 
   const [selectedFilter, setSelectedFilter] = useState("همه");
@@ -172,7 +176,10 @@ const Home = () => {
                 <FoodCard
                   key={f.id}
                   {...f}
-                  onClick={() => setSelectedFoodCard(f)}
+                  onClick={() => {
+                    setSelectedFoodCard(f);
+                    GAEventsTracker("منو رستوران", f);
+                  }}
                 />
               ))}
             </div>

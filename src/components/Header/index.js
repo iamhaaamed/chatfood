@@ -1,7 +1,10 @@
 import React from "react";
+import useGAEventTracke from "../../hooks/useGAEventTracker";
+
 import logo from "../../assets/images/logo.svg";
 
 export default () => {
+  const GAEventsTracker = useGAEventTracke("Links");
   return (
     <header className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <a className="navbar-brand" href="#">
@@ -33,7 +36,10 @@ export default () => {
             <option value="3">طرقبه</option>
           </select>
         </div>
-        <button className="btn btn-pill btn-danger rounded-pill ms-1 col-7">
+        <button
+          className="btn btn-pill btn-danger rounded-pill ms-1 col-7"
+          onClick={() => GAEventsTracker("ثبت رستوران")}
+        >
           ثبت رستوران
           <i className="fa fa-plus-circle text-white mx-1" />
         </button>
