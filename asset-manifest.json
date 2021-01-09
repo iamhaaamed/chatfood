@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/restaurant/static/css/main.773ab164.chunk.css",
-    "main.js": "/restaurant/static/js/main.ec1f501d.chunk.js",
-    "main.js.map": "/restaurant/static/js/main.ec1f501d.chunk.js.map",
-    "runtime-main.js": "/restaurant/static/js/runtime-main.48396504.js",
-    "runtime-main.js.map": "/restaurant/static/js/runtime-main.48396504.js.map",
+    "main.js": "/restaurant/static/js/main.0850d846.chunk.js",
+    "main.js.map": "/restaurant/static/js/main.0850d846.chunk.js.map",
+    "runtime-main.js": "/restaurant/static/js/runtime-main.6a07eea3.js",
+    "runtime-main.js.map": "/restaurant/static/js/runtime-main.6a07eea3.js.map",
     "static/css/2.4904f26c.chunk.css": "/restaurant/static/css/2.4904f26c.chunk.css",
-    "static/js/2.1550bd70.chunk.js": "/restaurant/static/js/2.1550bd70.chunk.js",
-    "static/js/2.1550bd70.chunk.js.map": "/restaurant/static/js/2.1550bd70.chunk.js.map",
-    "static/js/3.ed7e41bd.chunk.js": "/restaurant/static/js/3.ed7e41bd.chunk.js",
-    "static/js/3.ed7e41bd.chunk.js.map": "/restaurant/static/js/3.ed7e41bd.chunk.js.map",
+    "static/js/2.be660f66.chunk.js": "/restaurant/static/js/2.be660f66.chunk.js",
+    "static/js/2.be660f66.chunk.js.map": "/restaurant/static/js/2.be660f66.chunk.js.map",
+    "static/js/3.943e0161.chunk.js": "/restaurant/static/js/3.943e0161.chunk.js",
+    "static/js/3.943e0161.chunk.js.map": "/restaurant/static/js/3.943e0161.chunk.js.map",
     "index.html": "/restaurant/index.html",
     "static/css/2.4904f26c.chunk.css.map": "/restaurant/static/css/2.4904f26c.chunk.css.map",
     "static/css/main.773ab164.chunk.css.map": "/restaurant/static/css/main.773ab164.chunk.css.map",
-    "static/js/2.1550bd70.chunk.js.LICENSE.txt": "/restaurant/static/js/2.1550bd70.chunk.js.LICENSE.txt",
+    "static/js/2.be660f66.chunk.js.LICENSE.txt": "/restaurant/static/js/2.be660f66.chunk.js.LICENSE.txt",
     "static/media/App.css": "/restaurant/static/media/Samim.e97c598e.eot",
     "static/media/font-awesome.min.css": "/restaurant/static/media/fontawesome-webfont.f691f37e.woff",
     "static/media/healthy.9de99267.png": "/restaurant/static/media/healthy.9de99267.png",
@@ -21,10 +21,10 @@
     "static/media/pizza.3c242ca3.png": "/restaurant/static/media/pizza.3c242ca3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.48396504.js",
+    "static/js/runtime-main.6a07eea3.js",
     "static/css/2.4904f26c.chunk.css",
-    "static/js/2.1550bd70.chunk.js",
+    "static/js/2.be660f66.chunk.js",
     "static/css/main.773ab164.chunk.css",
-    "static/js/main.ec1f501d.chunk.js"
+    "static/js/main.0850d846.chunk.js"
   ]
 }
