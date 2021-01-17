@@ -6,9 +6,10 @@ export default function FoodCard({
   bgImage,
   logoImage,
   title,
-  category,
-  rate,
+  type,
+  rating,
   onClick,
+  menus,
 }) {
   return (
     <div className="col-lg-3 col-6">
@@ -27,20 +28,20 @@ export default function FoodCard({
         <div className="card-body">
           <img
             className="card-img-top rounded-circle shadow img-fluid"
-            src={logoImage}
+            src={logoImage || "https://picsum.photos/200"}
             style={{ width: 130, height: 130, marginTop: -90 }}
           />
           <h5 className="card-title  my-2">{title}</h5>
-          <h6 className="card-title my-2">{category}</h6>
+          <h6 className="card-title my-2">{type.map((t) => t + " ")}</h6>
 
           <div>
             <div className="mt-4 mb-2">
-              <span className="badge bg-danger mx-2">{rate}</span>
+              <span className="badge bg-danger mx-2">{rating}</span>
               <StarRatings
                 starRatedColor="#F6C518"
                 starDimension="20px"
                 starSpacing="3px"
-                rating={2}
+                rating={rating}
                 numberOfStars={5}
                 name="rating"
               />
@@ -69,8 +70,7 @@ export default function FoodCard({
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title" id="exampleModalLabel">
-                منو
-                {title}
+                منو {title}
               </h5>
               <button
                 type="button"
@@ -80,12 +80,14 @@ export default function FoodCard({
               ></button>
             </div>
             <div className="modal-body">
-              {category}
-              <img
-                className="card-img-top rounded img-fluid"
-                src={logoImage}
-                style={{ height: 100 }}
-              />
+              {type.map((t) => t + " ")}
+              {menus.map((m) => (
+                <img
+                  className="card-img-top rounded img-fluid"
+                  src={m}
+                  style={{}}
+                />
+              ))}
             </div>
             <div className="modal-footer">
               <button

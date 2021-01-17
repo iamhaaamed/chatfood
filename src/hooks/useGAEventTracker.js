@@ -1,10 +1,10 @@
 import React from "react";
 import ReactGA from "react-ga";
 
-const useGAEventTracker = (category = "Category") => {
+const useGAEventTracker = (type = "type") => {
   const trackEvent = (action = "action", label = "label") => {
     ReactGA.event({
-      category,
+      type,
       action,
       label,
     });

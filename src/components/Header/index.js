@@ -1,14 +1,15 @@
 import React from "react";
 import useGAEventTracke from "../../hooks/useGAEventTracker";
 
-import logo from "../../assets/images/logo.svg";
-
 export default () => {
   const GAEventsTracker = useGAEventTracke("Links");
   return (
     <header className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <a className="navbar-brand" href="#">
-        <img src={logo} className="img-fluid" />
+        <img
+          src={require("../../assets/images/logo.svg").default}
+          className="img-fluid"
+        />
       </a>
 
       <nav className="my-2 my-md-0 me-md-3">
