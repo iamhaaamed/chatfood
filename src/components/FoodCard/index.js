@@ -84,13 +84,44 @@ export default function FoodCard({
               ></button>
             </div>
             <div className="modal-body">
-              {menus.map((m) => (
-                <img
-                  className="card-img-top rounded img-fluid"
-                  src={m}
-                  style={{}}
-                />
-              ))}
+              <div
+                id={`carouselExampleControls${id}`}
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  {menus.map((m, i) => (
+                    <div class={`carousel-item ${i === 1 ? "active" : ""}`}>
+                      <img src={m} class="d-block w-100" alt={title} />
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  class="carousel-control-prev"
+                  href={`#carouselExampleControls${id}`}
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href={`#carouselExampleControls${id}`}
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
             </div>
             <div className="modal-footer">
               <a className="btn btn-primary mx-auto" href={`tel:${phone}`}>
