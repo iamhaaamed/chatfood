@@ -584,7 +584,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-2">
-              <img src={healthy} className="img-fluid" />
+              <img src={healthy} className="img-fluid d-none d-sm-block" />
             </div>
 
             <div className="col-md-8 text-center">
@@ -600,7 +600,7 @@ const Home = () => {
               </p>
             </div>
             <div className="col-md-2">
-              <img src={pizza} className="img-fluid" />
+              <img src={pizza} className="img-fluid d-none d-sm-block" />
             </div>
           </div>
         </div>
