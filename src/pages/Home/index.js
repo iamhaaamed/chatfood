@@ -611,16 +611,18 @@ const Home = () => {
               <hr className="text-danger"></hr>
             </div>
           </div>
-          {["همه", "فست فود", "غذای ایرانی", "سالاد"].map((item) => (
-            <button
-              onClick={() => setSelectedFilter(item)}
-              className={`btn btn-pill btn-${
-                item === selectedFilter ? "danger" : "light"
-              } rounded-pill shadow mx-2`}
-            >
-              {item}
-            </button>
-          ))}
+          {["همه", "فست فود", "غذای فرنگی", "غذای ایرانی", "سالاد"].map(
+            (item) => (
+              <button
+                onClick={() => setSelectedFilter(item)}
+                className={`btn btn-pill btn-${
+                  item === selectedFilter ? "danger" : "light"
+                } rounded-pill shadow mx-2`}
+              >
+                {item}
+              </button>
+            )
+          )}
           <div className="container mt-5">
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
               {filteredData.map((f) => (
