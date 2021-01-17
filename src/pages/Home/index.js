@@ -585,16 +585,16 @@ const Home = () => {
             </div>
 
             <div className="col-md-8 text-center">
-              <h5>
+              {/* <h5>
                 <strong>دنبال غذای خوب میگردی؟</strong>
               </h5>
-              <h3 className="text-danger ">
+               <h3 className="text-danger ">
                 <strong>چت فود</strong>
               </h3>
               <p className="my-5">
                 <strong> کمکت میکنه</strong>
                 <span className="text-danger"> ;) </span>
-              </p>
+              </p>*/}
             </div>
             <div className="col-md-2">
               <img src={pizza} className="img-fluid d-none d-sm-block" />
@@ -602,7 +602,7 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center">
-          <strong> بهترین ها برای شما</strong>
+          {/* <strong> بهترین ها برای شما</strong> */}
           <div className="col-md-1 mx-auto my-5">
             <div className="text-center">
               <hr className="text-danger"></hr>
