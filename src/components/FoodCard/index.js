@@ -7,6 +7,8 @@ export default function FoodCard({
   logoImage,
   title,
   type,
+  address,
+  phone,
   rating,
   onClick,
   menus,
@@ -32,7 +34,9 @@ export default function FoodCard({
             style={{ width: 130, height: 130, marginTop: -90 }}
           />
           <h5 className="card-title  my-2">{title}</h5>
-          <h6 className="card-title my-2">{type.map((t) => t + " ")}</h6>
+          <h6 className="card-title my-2">{type.join("، ")}</h6>
+
+          <div>{address}</div>
 
           <div>
             <div className="mt-4 mb-2">
@@ -80,7 +84,6 @@ export default function FoodCard({
               ></button>
             </div>
             <div className="modal-body">
-              {type.map((t) => t + " ")}
               {menus.map((m) => (
                 <img
                   className="card-img-top rounded img-fluid"
@@ -90,16 +93,9 @@ export default function FoodCard({
               ))}
             </div>
             <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                بستن
-              </button>
-              {/* <button type="button" className="btn btn-primary">
-                Save changes
-              </button> */}
+              <a className="btn btn-primary mx-auto" href={`tel:${phone}`}>
+                سفارش <i className="fa fa-phone text-white mx-1" />
+              </a>
             </div>
           </div>
         </div>
