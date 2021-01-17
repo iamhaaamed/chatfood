@@ -12,7 +12,7 @@ export default () => {
         />
       </a>
 
-      <nav className="my-2 my-md-0 me-md-3">
+      {/* <nav className="my-2 my-md-0 me-md-3">
         <a className="p-2 text-dark text-decoration-none" href="#">
           <i className="fa fa-home text-danger mx-1" /> صفحه اصلی
         </a>
@@ -25,9 +25,9 @@ export default () => {
         <a className="p-2 text-dark text-decoration-none" href="#">
           درباره ما
         </a>
-      </nav>
+      </nav> */}
       <div className="my-0 ms-md-auto d-flex align-items-center justify-center">
-        <div className="col-5">
+        <div className="col-12">
           <select
             className="form-select rounded-pill border-0 shadow"
             aria-label="Default select example"
@@ -37,13 +37,13 @@ export default () => {
             <option value="3">طرقبه</option>
           </select>
         </div>
-        <button
+        {/* <button
           className="btn btn-pill btn-danger rounded-pill ms-1 col-7"
           onClick={() => GAEventsTracker("ثبت رستوران")}
         >
           ثبت رستوران
           <i className="fa fa-plus-circle text-white mx-1" />
-        </button>
+        </button> */}
       </div>
     </header>
   );
