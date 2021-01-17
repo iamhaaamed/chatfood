@@ -89,42 +89,51 @@ export default function FoodCard({
                 class="carousel slide"
                 data-bs-ride="carousel"
               >
+                {/* <ol class="carousel-indicators">
+                  {menus.map((m, i) => (
+                    <li
+                      data-bs-target={`carouselExampleControls${id}`}
+                      data-bs-slide-to={i}
+                      class={i === 0 ? "active" : ""}
+                    ></li>
+                  ))}
+                </ol> */}
                 <div class="carousel-inner">
                   {menus.map((m, i) => (
-                    <div class={`carousel-item ${i === 1 ? "active" : ""}`}>
+                    <div
+                      data-bs-interval={false}
+                      class={`carousel-item  ${i === 1 ? "active" : ""}`}
+                    >
                       <img src={m} class="d-block w-100" alt={title} />
                     </div>
                   ))}
                 </div>
 
                 <a
-                  class="carousel-control-prev"
+                  class="carousel-control-prev text-decoration-none"
                   href={`#carouselExampleControls${id}`}
                   role="button"
                   data-bs-slide="prev"
                 >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
+                  <i className="fa fa-3x fa-chevron-right text-danger mx-1" />
                   <span class="visually-hidden">Previous</span>
                 </a>
                 <a
-                  class="carousel-control-next"
+                  class="carousel-control-next text-decoration-none"
                   href={`#carouselExampleControls${id}`}
                   role="button"
                   data-bs-slide="next"
                 >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
+                  <i className="fa fa-3x fa-chevron-left text-danger mx-1" />
                   <span class="visually-hidden">Next</span>
                 </a>
               </div>
             </div>
             <div className="modal-footer">
-              <a className="btn btn-primary mx-auto" href={`tel:${phone}`}>
+              <a
+                className="btn btn-danger rounded-pill mx-auto"
+                href={`tel:${phone}`}
+              >
                 سفارش <i className="fa fa-phone text-white mx-1" />
               </a>
             </div>

@@ -136,11 +136,11 @@ const data = [
       { title: "فست فود", sub: [{ title: "پیتزا" }] },
     ],
     menus: [
-      require("../../assets/images/menus/پیتزا کازابلانکا1.jpg").default,
-      require("../../assets/images/menus/پیتزا کازابلانکا2.jpg").default,
-      require("../../assets/images/menus/پیتزا کازابلانکا3.jpg").default,
-      require("../../assets/images/menus/پیتزا کازابلانکا4.jpg").default,
-      require("../../assets/images/menus/پیتزا کازابلانکا5.jpg").default,
+      require("../../assets/images/menus/پیتزا هیزمی1.jpg").default,
+      require("../../assets/images/menus/پیتزا هیزمی2.jpg").default,
+      require("../../assets/images/menus/پیتزا هیزمی3.jpg").default,
+      require("../../assets/images/menus/پیتزا هیزمی4.jpg").default,
+      require("../../assets/images/menus/پیتزا هیزمی5.jpg").default,
     ],
   },
   {
@@ -237,6 +237,7 @@ const data = [
       require("../../assets/images/menus/رستوران کلبه2.jpg").default,
       require("../../assets/images/menus/رستوران کلبه3.jpg").default,
       require("../../assets/images/menus/رستوران کلبه4.jpg").default,
+      require("../../assets/images/menus/رستوران کلبه5.jpg").default,
     ],
   },
   {
@@ -270,7 +271,7 @@ const data = [
       .default,
     logoImage: require("../../assets/images/logos/غذای دریایی سولو.png")
       .default,
-    type: ["ایرانی", "فرنگی", "غذای دریایی"],
+    type: ["غذای دریایی ایرانی و فرنگی"],
     rating: 4.4,
     phone: "09370669519",
     address: "هاشمیه 28",
@@ -321,10 +322,7 @@ const data = [
       { title: "غذای فرنگی" },
       { title: "فست فود", sub: [{ title: "برگر" }] },
     ],
-    menus: [
-      require("../../assets/images/menus/فست فود ماکیماه1.jpg").default,
-      require("../../assets/images/menus/فست فود ماکیماه2.jpg").default,
-    ],
+    menus: [require("../../assets/images/menus/فست فود ماکیماه1.jpg").default],
   },
 
   {
@@ -344,7 +342,6 @@ const data = [
     menus: [
       require("../../assets/images/menus/فست فود مهروآتش1.jpg").default,
       require("../../assets/images/menus/فست فود مهروآتش2.jpg").default,
-      require("../../assets/images/menus/فست فود مهروآتش3.jpg").default,
     ],
   },
 
@@ -481,7 +478,7 @@ const data = [
     bgImage: require("../../assets/images/backgrounds/کترینگ هخامنش.jpg")
       .default,
     logoImage: require("../../assets/images/logos/کترینگ هخامنش.png").default,
-    type: ["کباب", "ایرانی"],
+    type: ["ایرانی", "کباب"],
     rating: 3.8,
     phone: "09370669519",
     address: "بین وکیل آباد 14 و 16",
@@ -502,8 +499,8 @@ const data = [
     title: "نوبهاران",
     bgImage: require("../../assets/images/backgrounds/نوبهاران.jpg").default,
     logoImage: require("../../assets/images/logos/نوبهاران.png").default,
-    type: ["خورشت", "کباب", "ایرانی"],
-    rating: 2.0,
+    type: ["ایرانی", "کباب", "خورشت"],
+    rating: 4.2,
     phone: "09370669519",
     address: "بین چهارراه معلم و معلم18",
     link: "https://snappfood.ir/restaurant/menu/p6dlrw/nobaharan",
