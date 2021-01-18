@@ -51,7 +51,7 @@ const data = [
     type: ["فست فود", "برگر", "پیتزا"],
     rating: 4.3,
     phone: "09370669519",
-    address: "بین هفت نیر13 و 15",
+    address: "بین هفت تیر13 و 15",
     link: "https://snappfood.ir/restaurant/menu/pvrezv/shabdiz7tir/haftetir",
     category: [
       { title: "سالاد" },
@@ -145,9 +145,9 @@ const data = [
   },
   {
     id: 7,
-    title: "پیتزا خانه کرپ",
+    title: "خانه کرپ",
     bgImage: null,
-    logoImage: require("../../assets/images/logos/پیتزا خانه کرپ.png").default,
+    logoImage: require("../../assets/images/logos/خانه کرپ.png").default,
     type: ["غذای فرنگی", "استیک", "ساندویچ"],
     rating: 4.1,
     phone: "09370669519",
@@ -161,15 +161,16 @@ const data = [
       },
     ],
     menus: [
-      require("../../assets/images/menus/پیتزا خانه کرپ1.jpg").default,
-      require("../../assets/images/menus/پیتزا خانه کرپ2.jpg").default,
+      require("../../assets/images/menus/خانه کرپ1.jpg").default,
+      require("../../assets/images/menus/خانه کرپ2.jpg").default,
     ],
   },
   {
     id: 8,
-    title: "دورچین",
-    bgImage: require("../../assets/images/backgrounds/دورچین.jpg").default,
-    logoImage: require("../../assets/images/logos/دورچین.jpg").default,
+    title: "كترينگ دورچين",
+    bgImage: require("../../assets/images/backgrounds/كترينگ دورچين.jpg")
+      .default,
+    logoImage: require("../../assets/images/logos/كترينگ دورچين.jpg").default,
     type: ["ایرانی", "کباب", "خورشت"],
     rating: 4.3,
     phone: "09370669519",
@@ -179,11 +180,11 @@ const data = [
       { title: "غذای ایرانی", sub: [{ title: "کباب" }, { title: "خورشت" }] },
     ],
     menus: [
-      require("../../assets/images/menus/دورچین1.jpg").default,
-      require("../../assets/images/menus/دورچین2.jpg").default,
-      require("../../assets/images/menus/دورچین3.jpg").default,
-      require("../../assets/images/menus/دورچین4.jpg").default,
-      require("../../assets/images/menus/دورچین5.jpg").default,
+      require("../../assets/images/menus/كترينگ دورچين1.jpg").default,
+      require("../../assets/images/menus/كترينگ دورچين2.jpg").default,
+      require("../../assets/images/menus/كترينگ دورچين3.jpg").default,
+      require("../../assets/images/menus/كترينگ دورچين4.jpg").default,
+      require("../../assets/images/menus/كترينگ دورچين5.jpg").default,
     ],
   },
   {
@@ -496,9 +497,11 @@ const data = [
 
   {
     id: 22,
-    title: "نوبهاران",
-    bgImage: require("../../assets/images/backgrounds/نوبهاران.jpg").default,
-    logoImage: require("../../assets/images/logos/نوبهاران.png").default,
+    title: "رستوران نوبهاران",
+    bgImage: require("../../assets/images/backgrounds/رستوران نوبهاران.jpg")
+      .default,
+    logoImage: require("../../assets/images/logos/رستوران نوبهاران.png")
+      .default,
     type: ["ایرانی", "کباب", "خورشت"],
     rating: 4.2,
     phone: "09370669519",
@@ -509,10 +512,10 @@ const data = [
       { title: "غذای ایرانی", sub: [{ title: "کباب" }, { title: "خورشت" }] },
     ],
     menus: [
-      require("../../assets/images/menus/نوبهاران1.jpg").default,
-      require("../../assets/images/menus/نوبهاران2.jpg").default,
-      require("../../assets/images/menus/نوبهاران3.jpg").default,
-      require("../../assets/images/menus/نوبهاران4.jpg").default,
+      require("../../assets/images/menus/رستوران نوبهاران1.jpg").default,
+      require("../../assets/images/menus/رستوران نوبهاران2.jpg").default,
+      require("../../assets/images/menus/رستوران نوبهاران3.jpg").default,
+      require("../../assets/images/menus/رستوران نوبهاران4.jpg").default,
     ],
   },
 ];
