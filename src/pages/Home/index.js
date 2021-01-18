@@ -356,7 +356,7 @@ const data = [
     type: ["پیتزا", "برگر", "پاستا", "سوخاری"],
     rating: 4.0,
     phone: "09370669519",
-    address: "صیاد 12 و 14",
+    address: "بين صياد12 و 14",
     link: "../../assets/images/menus/",
     category: [
       { title: "سالاد" },
