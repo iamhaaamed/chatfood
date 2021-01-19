@@ -174,7 +174,7 @@ const data = [
     type: ["ایرانی", "کباب", "خورشت"],
     rating: 4.3,
     phone: "09370669519",
-    address: "بین وکیل آباد 34 و 36",
+    address: "بين معلم 34 و 36",
     link: "https://m.snappfood.ir/restaurant/0nrg2r",
     category: [
       { title: "غذای ایرانی", sub: [{ title: "کباب" }, { title: "خورشت" }] },
