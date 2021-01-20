@@ -87,7 +87,7 @@ export default function FoodCard({
               <div
                 id={`carouselExampleControls${id}`}
                 className="carousel slide"
-                data-bs-ride="carousel"
+                data-interval="false"
               >
                 {/* <ol className="carousel-indicators">
                   {menus.map((m, i) => (
@@ -103,7 +103,7 @@ export default function FoodCard({
                     <div
                       key={m}
                       data-bs-interval={false}
-                      className={`carousel-item  ${i === 1 ? "active" : ""}`}
+                      className={`carousel-item  ${i === 0 ? "active" : ""}`}
                     >
                       <img src={m} className="d-block w-100" alt={title} />
                     </div>
