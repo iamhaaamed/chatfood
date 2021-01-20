@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chatfood/static/css/main.b9fa938c.chunk.css",
+    "main.css": "/chatfood/static/css/main.01d357f6.chunk.css",
     "main.js": "/chatfood/static/js/main.4a8ecf96.chunk.js",
     "main.js.map": "/chatfood/static/js/main.4a8ecf96.chunk.js.map",
     "runtime-main.js": "/chatfood/static/js/runtime-main.515d5344.js",
@@ -12,7 +12,7 @@
     "static/js/3.0169a241.chunk.js.map": "/chatfood/static/js/3.0169a241.chunk.js.map",
     "index.html": "/chatfood/index.html",
     "static/css/2.60bc4f8d.chunk.css.map": "/chatfood/static/css/2.60bc4f8d.chunk.css.map",
-    "static/css/main.b9fa938c.chunk.css.map": "/chatfood/static/css/main.b9fa938c.chunk.css.map",
+    "static/css/main.01d357f6.chunk.css.map": "/chatfood/static/css/main.01d357f6.chunk.css.map",
     "static/js/2.d7d79969.chunk.js.LICENSE.txt": "/chatfood/static/js/2.d7d79969.chunk.js.LICENSE.txt",
     "static/media/App.css": "/chatfood/static/media/Samim.e97c598e.eot",
     "static/media/font-awesome.min.css": "/chatfood/static/media/fontawesome-webfont.f691f37e.woff",
@@ -125,7 +125,7 @@
     "static/js/runtime-main.515d5344.js",
     "static/css/2.60bc4f8d.chunk.css",
     "static/js/2.d7d79969.chunk.js",
-    "static/css/main.b9fa938c.chunk.css",
+    "static/css/main.01d357f6.chunk.css",
     "static/js/main.4a8ecf96.chunk.js"
   ]
 }
