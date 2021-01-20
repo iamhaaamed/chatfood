@@ -14,7 +14,12 @@ export default function FoodCard({
   menus,
 }) {
   return (
-    <div className="col-lg-3 col-6">
+    <div
+      className="col-lg-3 col-6"
+      onClick={onClick}
+      data-bs-toggle="modal"
+      data-bs-target={`#exampleModal${id}`}
+    >
       <div className="card mb-4 shadow  border-0 " style={{ borderRadius: 20 }}>
         <div className="card-header  border-0 p-0">
           <img
@@ -52,12 +57,7 @@ export default function FoodCard({
             </div>
           </div>
 
-          <button
-            onClick={onClick}
-            className={`btn btn-pill border-danger rounded-pill mt-3`}
-            data-bs-toggle="modal"
-            data-bs-target={`#exampleModal${id}`}
-          >
+          <button className={`btn btn-pill border-danger rounded-pill mt-3`}>
             مشاهده
           </button>
         </div>
