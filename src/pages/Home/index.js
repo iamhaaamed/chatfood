@@ -570,7 +570,21 @@ const Home = () => {
                 placeholder="جستجوي نام رستوران، غذا "
                 value={term}
                 onChange={(e) => {
-                  setTerm(e.target.value);
+                  setTerm(
+                    e.target.value
+                      .replace(/ك/g, "ک") // Arabic
+                      .replace(/ڪ/g, "ک") // Urdu
+                      .replace(/ﻙ/g, "ک") // Pushtu
+                      .replace(/ﻚ/g, "ک") // Uyghur
+                      .replace(/ي/g, "ی") // Arabic
+                      .replace(/ى/g, "ی") // Urdu
+                      .replace(/ے/g, "ی") // Urdu
+                      .replace(/ۍ/g, "ی") // Pushtu
+                      .replace(/ې/g, "ی") // Uyghur
+                      .replace(/ہ/g, "ه") // Convert ہ to ه ہہہہ to ههه
+                      .replace(/ە/g, "ه\u200c") // Kurdish
+                      .replace(/ھ/g, "ه") // Kurdish
+                  );
                 }}
               />
               <div className="input-group-append rounded-pill ">
