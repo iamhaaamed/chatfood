@@ -119,7 +119,13 @@ const data = [
         ],
       },
     ],
-    menus: ["../../assets/images/menus/", "../../assets/images/menus/"],
+    menus: [
+      require("../../assets/images/menus/پیتزا کازابلانکا1.jpg").default,
+      require("../../assets/images/menus/پیتزا کازابلانکا2.jpg").default,
+      require("../../assets/images/menus/پیتزا کازابلانکا3.jpg").default,
+      require("../../assets/images/menus/پیتزا کازابلانکا4.jpg").default,
+      require("../../assets/images/menus/پیتزا کازابلانکا5.jpg").default,
+    ],
   },
   {
     id: 6,
@@ -198,7 +204,7 @@ const data = [
     rating: 4.0,
     phone: "09370669519",
     address: "بین وکیل آباد55 و 57",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       { title: "غذای فرنگی" },
@@ -250,7 +256,7 @@ const data = [
     rating: 4.1,
     phone: "09370669519",
     address: "بین وکیل آباد 23 و 25",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       {
@@ -276,7 +282,7 @@ const data = [
     rating: 4.4,
     phone: "09370669519",
     address: "هاشمیه 28",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       { title: "غذای فرنگی" },
@@ -297,7 +303,7 @@ const data = [
     rating: 4.3,
     phone: "09370669519",
     address: "بین هنرستان19و21",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       { title: "فست فود", sub: [{ title: "ساندویچ" }, { title: "برگر" }] },
@@ -318,7 +324,7 @@ const data = [
     rating: 4.0,
     phone: "09370669519",
     address: "بین وکیل آباد 29 و 31",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "غذای فرنگی" },
       { title: "فست فود", sub: [{ title: "برگر" }] },
@@ -336,7 +342,7 @@ const data = [
     rating: 4.0,
     phone: "09370669519",
     address: "هاشمیه34",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "فست فود", sub: [{ title: "سوخاری" }, { title: "برگر" }] },
     ],
@@ -357,7 +363,7 @@ const data = [
     rating: 4.0,
     phone: "09370669519",
     address: "بين صياد12 و 14",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       {
@@ -418,7 +424,7 @@ const data = [
     rating: 4.1,
     phone: "09370669519",
     address: "تقاطع جلال آل احمد و فرهنگ",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [
       { title: "سالاد" },
       { title: "غذای فرنگی" },
@@ -445,7 +451,7 @@ const data = [
     rating: 3.8,
     phone: "09370669519",
     address: "بین هفت تیر19 و21",
-    link: "../../assets/images/menus/",
+    link: "",
     category: [{ title: "غذای فرنگی" }],
     menus: [
       require("../../assets/images/menus/کباب ترکی سالار1.jpg").default,
