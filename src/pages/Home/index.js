@@ -5,7 +5,7 @@ import pizza from "../../assets/images/pizza.png";
 import healthy from "../../assets/images/healthy.png";
 import FoodCard from "../../components/FoodCard";
 
-import useGAEventTracke from "../../hooks/useGAEventTracker";
+import useGAEventTracker from "../../hooks/useGAEventTracker";
 
 const data = [
   {
@@ -527,7 +527,7 @@ const data = [
 ];
 
 const Home = () => {
-  const GAEventsTracker = useGAEventTracke("Links");
+  const GAEventsTracker = useGAEventTracker("Links");
 
   const [selectedFoodCard, setSelectedFoodCard] = useState();
 
@@ -634,6 +634,7 @@ const Home = () => {
           {["همه", "فست فود", "غذای فرنگی", "غذای ایرانی", "سالاد"].map(
             (item) => (
               <button
+                key={item}
                 onClick={() => setSelectedFilter(item)}
                 className={`btn btn-pill btn-${
                   item === selectedFilter ? "danger" : "light"
