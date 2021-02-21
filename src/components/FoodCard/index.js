@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import StarRatings from "react-star-ratings";
+import useGAEventTracker from "../../hooks/useGAEventTracker";
 
 export default function FoodCard({
   id,
@@ -13,6 +14,7 @@ export default function FoodCard({
   onClick,
   menus,
 }) {
+  const GAEventsTracker = useGAEventTracker("Links");
   return (
     <div
       className="col-lg-3 col-6"
@@ -134,6 +136,7 @@ export default function FoodCard({
               <a
                 className="btn btn-danger rounded-pill mx-auto"
                 href={`tel:${phone}`}
+                onClick={() => GAEventsTracker("سفارش", title)}
               >
                 سفارش <i className="fa fa-phone text-white mx-1" />
               </a>
